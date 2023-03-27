@@ -1,0 +1,43 @@
+$ git init
+// Иницијализација на local repo
+$ git remote add origin  https://github.com/OrdancheNedev/SI_2023_lab1_203206.git
+//Поврзување на local repo со remote repo
+$ git remote -v
+//Проверка на поврзаност
+$ nano README.md
+$ git add .
+$ git commit -m "Initial commit"
+$ nano SILab1.java
+$ git add SILab1.java
+$ git commit -m "Add java class"
+$ git push --set-upstream origin master
+//Синхронизирање со оддалечен репозиториум
+$ git branch bug1
+$ git branch bug2
+$ git branch bug3
+$ git checkout bug1
+$ git add SILab1.java
+$ git commit -m "Fix wrong loop for reading"
+$ git checkout bug2
+$ git add SILab1.java
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+$ git checkout bug3
+$ git add SILab1.java
+$ git commit -m "Fix method sumEvenNumber"
+$ git push origin -u bug1
+$ git push origin -u bug2
+$ git push origin -u bug3
+$ git checkout master
+$ git merge bug1
+$ git push 
+$ git merge bug2
+//Ne javuva konflikt
+$ git push
+$ git checkout bug3
+$ git rebase master bug3
+$ git checkout master
+$ git merge bug3
+$ git push
+// Se javuva konflikt(ne dozvoluva fast-forward), no so --force na krajot od komandata, promenata se prifakja
+ 
+

@@ -1,0 +1,22 @@
+commit 68875d3269b02ead0eaf1b3f990c33a00fc10b76 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Ordanche <ordanchenedev@gmail.com>
+Date:   Mon Mar 27 10:51:14 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit c9a43a522847eb7a60013a594ab446dee557882b
+Merge: 50702fd 222216c
+Author: Ordanche <ordanchenedev@gmail.com>
+Date:   Mon Mar 27 10:57:26 2023 +0200
+
+    Fix a bug
+
+commit 222216c204caa2f0e92d05079af189957f069dd7 (origin/bug2, bug2)
+Author: Ordanche <ordanchenedev@gmail.com>
+Date:   Mon Mar 27 10:47:57 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 50702fd86107351c2843e1a1449d54d47e0b5150 (origin/bug1, bug1)
+Author: Ordanche <ordanchenedev@gmail.com>
+Date:   Mon Mar 27 10:45:08 2023 +0200
